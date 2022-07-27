@@ -21,11 +21,11 @@ public class Program {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:ss");
 
         System.out.println("Enter rental date");
-        System.out.print("Car model");
+        System.out.print("Car model: ");
         String carModel = sc.nextLine();
         System.out.print("Pickup (dd/MM/yyyy HH:ss): ");
         Date start = sdf.parse(sc.nextLine());
-        System.out.print("Return (dd/MM/yyyy HH:ss)");
+        System.out.print("Return (dd/MM/yyyy HH:ss): ");
         Date finish = sdf.parse(sc.nextLine());
 
         CarRental cr = new CarRental(start, finish, new Vehicle(carModel));
